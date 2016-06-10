@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mutanda.Pages.LoginPage"
+             xmlns:local="clr-namespace:Mutanda;assembly=Mutanda">
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <OnPlatform x:Key="imageOrderEntry"
+                x:TypeArguments="ImageSource"
+                iOS="logo.png"
+                Android="logo.png"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <StackLayout Padding="0" Spacing="0" VerticalOptions="Center">
+    <Label Text="Login" Font="Bold, Medium" HorizontalOptions="Center" />
+
+    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <!--<ColumnDefinition Width=".3*" />
+          <ColumnDefinition Width=".3*" />
+          <ColumnDefinition Width=".3*" />-->
+        </Grid.ColumnDefinitions>
+
+        <local:CustomSocialImage x:Name ="Google" Grid.Column="0"  ImageSocial="google.png" Clicked ="OnLoginGoogle"/>
+        <!--<local:CustomSocialImage x:Name ="Facebook" Grid.Column="1" ImageSocial="facebook.png" Clicked ="OnLoginFacebook" IsVisible="false"/>
+        <local:CustomSocialImage x:Name ="Live" Grid.Column="2" ImageSocial="live.png" Clicked ="OnLoginLive"  IsVisible="false"/>-->
+      </Grid>
+    </StackLayout>
+  </StackLayout>
+
+</ContentPage>

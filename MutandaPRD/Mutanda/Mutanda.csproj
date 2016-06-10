@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB78322A-A06F-487D-8DF0-172F76422AAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mutanda</RootNamespace>
+    <AssemblyName>Mutanda</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Models\Authorization.cs">
+      <Link>Models\Authorization.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\BaseModel.cs">
+      <Link>Models\BaseModel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\DEVICE_ParametriDevice.cs">
+      <Link>Models\DEVICE_ParametriDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Anagrafica_Indirizzi.cs">
+      <Link>Models\GEST_Anagrafica_Indirizzi.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Articoli_Anagrafica.cs">
+      <Link>Models\GEST_Articoli_Anagrafica.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Articoli_BarCode.cs">
+      <Link>Models\GEST_Articoli_BarCode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Articoli_Classi.cs">
+      <Link>Models\GEST_Articoli_Classi.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Articoli_Disponibilita.cs">
+      <Link>Models\GEST_Articoli_Disponibilita.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Articoli_Famiglie.cs">
+      <Link>Models\GEST_Articoli_Famiglie.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Articoli_Immagini.cs">
+      <Link>Models\GEST_Articoli_Immagini.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Articoli_Listini.cs">
+      <Link>Models\GEST_Articoli_Listini.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Articoli_Nature.cs">
+      <Link>Models\GEST_Articoli_Nature.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_CategorieClienti.cs">
+      <Link>Models\GEST_CategorieClienti.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Clienti_Anagrafica.cs">
+      <Link>Models\GEST_Clienti_Anagrafica.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Clienti_Anagrafica_Indirizzi.cs">
+      <Link>Models\GEST_Clienti_Anagrafica_Indirizzi.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Condizione_Pagamento.cs">
+      <Link>Models\GEST_Condizione_Pagamento.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Documenti_Righe.cs">
+      <Link>Models\GEST_Documenti_Righe.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Documenti_Teste.cs">
+      <Link>Models\GEST_Documenti_Teste.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Iva.cs">
+      <Link>Models\GEST_Iva.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Listini.cs">
+      <Link>Models\GEST_Listini.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Ordini_Righe.cs">
+      <Link>Models\GEST_Ordini_Righe.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Ordini_Teste.cs">
+      <Link>Models\GEST_Ordini_Teste.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_ParametriDevice.cs">
+      <Link>Models\GEST_ParametriDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Porto.cs">
+      <Link>Models\GEST_Porto.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Scala_Sconti.cs">
+      <Link>Models\GEST_Scala_Sconti.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_UnitaMisura.cs">
+      <Link>Models\GEST_UnitaMisura.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\GEST_Update_Immagini.cs">
+      <Link>Models\GEST_Update_Immagini.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Models\Permissions.cs">
+      <Link>Models\Permissions.cs</Link>
+    </Compile>
+    <Compile Include="App.cs" />
+    <Compile Include="Converters\CellNegationConverter.cs" />
+    <Compile Include="Converters\CellHideConverter.cs" />
+    <Compile Include="Converters\CellSelectedBackgroundConverter.cs" />
+    <Compile Include="Converters\CloutStateToString.cs" />
+    <Compile Include="Converters\NumeroOrdineConverter.cs" />
+    <Compile Include="CustomControl\CustomSocialImage.xaml.cs">
+      <DependentUpon>CustomSocialImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\DataPickerCustom.cs" />
+    <Compile Include="CustomControl\EntryCustom.cs" />
+    <Compile Include="CustomControl\ExtendedPicker.cs" />
+    <Compile Include="CustomControl\ListViewAlternateColorCustom.cs" />
+    <Compile Include="CustomControl\WrappedItemSelectionTemplate.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Extensions\ObservableCollectionExtensions.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Interfaces\IAuthorization.cs" />
+    <Compile Include="Interfaces\INetworkConnection.cs" />
+    <Compile Include="Models\Local\GEST_Ordini_Righe_DettaglioOrdine.cs" />
+    <Compile Include="Models\PushResult.cs" />
+    <Compile Include="Pages\Clienti\ClientiRootPage.cs" />
+    <Compile Include="Pages\HomePage.cs" />
+    <Compile Include="Pages\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_ArticoliInOrdineFiltri.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_ArticoliInOrdineItemCell_Lamande.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_DatiOrdineItemCell.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_Note.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_SelezArticoliItemCell_Lamande.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_SelezClienteIndSpedizItemCell.cs" />
+    <Compile Include="Pages\Ordini\OrdiniLista\OrdiniListaIHeaderItemCell.cs" />
+    <Compile Include="Pages\Ordini\OrdiniLista\OrdiniListaItemCell.cs" />
+    <Compile Include="Pages\Ordini\Parametri\Parametri.cs" />
+    <Compile Include="Pages\RootPage.cs" />
+    <Compile Include="Pages\Sync\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Sync\SyncRootPages.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\Ordini\OrdiniLista\OrdiniLista.cs" />
+    <Compile Include="Services\AzureService.cs" />
+    <Compile Include="Services\Enumerativi.cs" />
+    <Compile Include="Services\DataService.cs" />
+    <Compile Include="Services\ExpandableEditor.cs" />
+    <Compile Include="Interfaces\IDataService.cs" />
+    <Compile Include="Interfaces\IHudService.cs" />
+    <Compile Include="Services\Grouping.cs" />
+    <Compile Include="Services\ParamDispenser.cs" />
+    <Compile Include="ViewModels\Base\BaseViewModel.cs" />
+    <Compile Include="ViewModels\Clienti\ClientiDettaglioViewModel.cs" />
+    <Compile Include="ViewModels\Clienti\ClientiListaViewModel.cs" />
+    <Compile Include="ViewModels\Ordini\OrdiniLista\OrdiniListaViewModel.cs" />
+    <Compile Include="ViewModels\Parametri\ParametriViewModel.cs" />
+    <Compile Include="Views\Base\BaseViewModel.cs" />
+    <Compile Include="Views\Clienti\ClientiDettaglioView.xaml.cs">
+      <DependentUpon>ClientiDettaglioView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clienti\ClientiListaItemView.xaml.cs">
+      <DependentUpon>ClientiListaItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clienti\ClientiListaView.cs" />
+    <Compile Include="Views\FloatingActionButtonView.cs" />
+    <Compile Include="CustomControl\ListViewExt.cs" />
+    <Compile Include="Models\Local\GEST_Articoli_Anagrafica_SelezioneArticolo.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine.cs" />
+    <Compile Include="ViewModels\Ordini\NuovoOrdine\NuovoOrdineViewModel.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_SelezArticoli.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_SelezArticoliItemCell.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_SelezCliente.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_SelezClienteItemCell.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_ArticoliInOrdine.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_ArticoliInOrdineItemCell.cs" />
+    <Compile Include="Pages\Ordini\NuovoOrdine\NuovoOrdine_DatiOrdine.cs" />
+    <Compile Include="Extensions\CustomRadioButton.cs" />
+    <Compile Include="Extensions\CheckBox.cs" />
+    <Compile Include="Extensions\BindableRadioGroup.cs" />
+    <Compile Include="Models\Local\SelezioneListView.cs" />
+    <Compile Include="Extensions\ObservableCollectionWithEvents.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\packages\Microsoft.Azure.Mobile.Client.2.0.1\lib\portable-win+net45+wp8+wpa81+monotouch+monoandroid\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.SQLiteStore, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\packages\Microsoft.Azure.Mobile.Client.SQLiteStore.2.0.1\lib\portable-win+net45+wp8+wpa81+monotouch+monoandroid\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL, Version=3.8.7.2, Culture=neutral, PublicKeyToken=bddade01e9c850c5">
+      <HintPath>..\..\packages\SQLitePCL.3.8.7.2\lib\portable-net45+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SQLitePCL.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.DeviceInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.DeviceInfo.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\Xam.Plugin.DeviceInfo.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\..\packages\Xamarin.Forms.2.2.0.43\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\..\packages\Xamarin.Forms.2.2.0.43\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\..\packages\Xamarin.Forms.2.2.0.43\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Clienti\ClientiDettaglioView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Clienti\ClientiListaItemView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.2.0.43\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.2.0.43\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\Sync\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomControl\CustomSocialImage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

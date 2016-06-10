@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:ClientiDettaglioViewXaml
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  x:Class="Mutanda.Views.Clienti.ClientiDettaglioView"
+  xmlns:base="clr-namespace:Mutanda.Views.Clienti"
+  xmlns:core="clr-namespace:System"
+  xmlns:customControl="clr-namespace:Mutanda.Extensions;assembly=Mutanda">
+<!--Style="{DynamicResource SubtitleStyle}"/-->
+    
+  <ScrollView Orientation = "Vertical" VerticalOptions="FillAndExpand" Padding="10, 15, 10, 0">
+    <StackLayout  Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="0, 10, 0, 10">
+      <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <ContentView Padding="0, 12, 0, 0">
+          <Label Text="Ragione Sociale" FontAttributes="Bold" FontSize="16" />
+        </ContentView>
+        <Entry Text="{Binding RagioneSociale}" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabled}" />
+      </StackLayout>
+
+      <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <ContentView Padding="0, 12, 0, 0"> <Label Text="Partita Iva" FontAttributes="Bold" FontSize="16" /> </ContentView>
+        <Entry Text="{Binding PartitaIva}" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabled}"  />
+        <ContentView Padding="0, 10, 0, 0"> <Label Text="Codice Fiscale" FontSize="16" FontAttributes="Bold" /> </ContentView>
+        <Entry Text="{Binding CodiceFiscale}" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabled}"   />
+      </StackLayout>
+  
+      <StackLayout  Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" BackgroundColor="#e7e4e4">
+        <ContentView Padding="0, 10, 0, 0" >
+          <Label Text="Sede Legale" FontSize="16" FontAttributes="Bold" />
+          </ContentView>
+      
+          <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+            <ContentView Padding="0, 10, 0, 0"> <Label Text="Indirizzo" FontSize="16"/> </ContentView>
+            <Entry Text="{Binding Indirizzo}" HorizontalOptions="FillAndExpand"  IsEnabled="{Binding IsEnabled}"  />
+            <ContentView Padding="0, 10, 0, 0"> <Label Text="CAP"/> </ContentView>
+            <Entry Text="{Binding CAP}" HorizontalOptions="FillAndExpand"  IsEnabled="{Binding IsEnabled}"  />
+          </StackLayout>
+          <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+            <ContentView Padding="0, 10, 0, 0"> <Label Text="Città" FontSize="16"/> </ContentView>
+            <Entry Text="{Binding Citta}" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabled}"  />
+            <ContentView Padding="0, 10, 0, 0"> <Label Text="Provincia" FontSize="16"/> </ContentView>
+            <Entry Text="{Binding Provincia}" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabled}"  />
+          </StackLayout>
+        </StackLayout>
+      
+      <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <ContentView Padding="0, 10, 0, 0"> <Label Text="Telefono" FontSize="16"/> </ContentView>
+        <Entry Text="{Binding Telefono}" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabled}" />
+        <ContentView Padding="0, 10, 0, 0"> <Label Text="Cellulare" FontSize="16"/> </ContentView>
+        <Entry Text="{Binding Cellulare}" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabled}"  />
+      </StackLayout>
+    
+      <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <ContentView Padding="0, 10, 0, 0"> <Label Text="Email" FontSize="16"/> </ContentView>
+        <Entry Text="{Binding Email}" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabled}"  />
+        <ContentView Padding="0, 10, 0, 0"> <Label Text="Web"/> </ContentView>
+        <Entry Text="{Binding Web}" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabled}"  />
+      </StackLayout>
+
+      <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <ContentView Padding="0, 10, 0, 0"> <Label Text="Condizione Pagamento" FontSize="16" FontAttributes="Bold" /> </ContentView>
+        <customControl:ExtendedPicker HorizontalOptions="FillAndExpand" ItemsSource="{Binding ListaCodPagamento,Mode=TwoWay}" SelectedItem="{Binding SelectedCodPagamento, Mode=TwoWay}" DisplayProperty="NCP_DescrizioneWeb" IsEnabled="{Binding IsEnabled}"  />
+      </StackLayout>
+      
+      <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <ContentView Padding="0, 10, 0, 0"> 
+          <Label Text="Listino" FontSize="16" FontAttributes="Bold" />
+        </ContentView>
+        <customControl:ExtendedPicker HorizontalOptions="FillAndExpand" ItemsSource="{Binding ListaListini,Mode=TwoWay}" SelectedItem="{Binding SelectedListino, Mode=TwoWay}" DisplayProperty="Descrizione" IsEnabled="{Binding IsEnabled}"  />
+      </StackLayout>
+  
+    <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <ContentView Padding="0, 10, 0, 0"> 
+          <Label Text="Categoria Cliente" FontSize="16" FontAttributes="Bold" />
+        </ContentView>
+        <customControl:ExtendedPicker HorizontalOptions="FillAndExpand" ItemsSource="{Binding ListaCategorieClienti,Mode=TwoWay}" SelectedItem="{Binding SelectedCategorieClienti, Mode=TwoWay}" DisplayProperty="Descrizione" IsEnabled="{Binding IsEnabled}"  />
+      </StackLayout>
+
+    <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <ContentView Padding="0, 10, 0, 0"> 
+          <Label Text="Porto" FontSize="16" FontAttributes="Bold" />
+        </ContentView>
+        <customControl:ExtendedPicker HorizontalOptions="FillAndExpand" ItemsSource="{Binding ListaPorti,Mode=TwoWay}" SelectedItem="{Binding SelectedPorti, Mode=TwoWay}" DisplayProperty="Descrizione"  IsEnabled="{Binding IsEnabled}" />
+      </StackLayout>
+      
+    </StackLayout>
+  </ScrollView>
+</base:ClientiDettaglioViewXaml>
